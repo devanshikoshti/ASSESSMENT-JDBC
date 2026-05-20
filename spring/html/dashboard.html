@@ -1,0 +1,10 @@
+<h2>Campus Events</h2>
+<a href="/add-event">Add New Event</a>
+
+<table border="1">
+    <tr><th>Event Title</th><th>Date</th></tr>
+    <tr th:each="event : ${events}">
+        <td th:text="${event.title}"></td>
+        <td th:text="${event.eventDate}"></td>
+    </tr>
+</table>
